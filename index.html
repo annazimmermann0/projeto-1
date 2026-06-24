@@ -43,6 +43,7 @@
         <h2>Cheesecake de frutas vermelhas</h2>
         <p class="artigo-autor">! Sou a Anna e este é o Cozinha Criativa, um espaço para quem ama cozinhar, experimentar e se deliciar com sabores incríveis. 
         Para começar, quero compartilhar uma receita simples e deliciosa que todos vão adorar:Cheesecake de frutas vermelhas</p>
+        <button>​💜 <span>0</span>​</button>
     </div>
             Aquele clássico que nunca falha. Quem resiste?<p>
      <p>🅸🅽🅶🆁🅴🅳🅸🅴🅽🆃🅴🆂<p>
@@ -103,4 +104,14 @@
 </p>Desenforme com cuidado (passe uma faca sem ponta nas laterais antes de abrir o aro) e sirva gelado.</p>
 </main>
    </body>
+   <script>
+    const botao = document.querySelector("button");
+    botao.addEventListener("click", botaoClicado);
+
+    function botaoClicado(){
+        console.log("fui clicado");
+        let texto = botao.querySelector("span");
+        texto.textContent++;
+    }
+   </script>
 </html>
